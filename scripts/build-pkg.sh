@@ -43,6 +43,7 @@ echo "Building version: $version-$release"
 
 cp_src() {
     local dest=$1
+    ln -sf README.md README
     cp -a conf $dest
     cp -a doc $dest
     cp -a scripts $dest
